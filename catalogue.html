@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogue — PHONE 229, Cotonou</title>
+  <meta name="description" content="Tous les téléphones, tablettes, ordinateurs et accessoires PHONE 229 avec leurs prix en FCFA. Filtrez par marque : Apple, Samsung, Honor.">
+  <meta name="theme-color" content="#0B3B5B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500;600&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="catalogue">
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html" aria-label="PHONE 229, accueil"><span>PHONE</span><span class="logo-tag">229</span></a>
+      <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span></button>
+      <nav class="site-nav" id="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="catalogue.html" aria-current="page">Catalogue</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-wa header-wa" href="contact.html" data-wa="">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-tete">
+      <div class="wrap">
+        <p class="eyebrow">Catalogue</p>
+        <h1 class="page-titre">Tous nos produits</h1>
+        <p class="page-intro">Prix en FCFA, état indiqué sur chaque produit. Touchez un produit pour voir sa fiche, ou commandez directement sur WhatsApp.</p>
+      </div>
+    </section>
+
+    <div class="filtres">
+      <div class="wrap">
+        <form class="filtres-ligne" id="form-recherche" role="search">
+          <div class="champ-recherche">
+            <label class="visuellement-cache" for="recherche">Rechercher un produit</label>
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <input type="search" id="recherche" placeholder="iPhone 14, Galaxy A55, 256 Go…" autocomplete="off">
+          </div>
+          <label class="visuellement-cache" for="filtre-categorie">Catégorie</label>
+          <select id="filtre-categorie"></select>
+        </form>
+        <div class="filtres-ligne">
+          <div class="puces" id="filtre-marques" role="group" aria-label="Filtrer par marque"></div>
+          <p class="compteur" id="compteur" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section-suite">
+      <div class="wrap">
+        <div class="grille" id="grille"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grille">
+        <div class="footer-marque">
+          <a class="logo" href="index.html"><span>PHONE</span><span class="logo-tag">229</span></a>
+          <p class="footer-slogan" data-info="slogan"></p>
+        </div>
+        <div>
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Boutique</h2>
+          <ul>
+            <li data-info="adresse"></li>
+            <li data-info="ville"></li>
+            <li><a data-lien="tel" href="#" data-info="telephone"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Suivez-nous</h2>
+          <ul data-reseaux></ul>
+        </div>
+      </div>
+      <div class="footer-bas">
+        <span>© <span data-annee></span> PHONE 229. Tous droits réservés.</span>
+        <span>Prix en FCFA, valables dans la limite des stocks.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/boutique.js"></script>
+  <script src="js/produits.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

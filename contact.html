@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — PHONE 229, Cotonou</title>
+  <meta name="description" content="Adresse, téléphone, WhatsApp et horaires de la boutique PHONE 229 à Cotonou.">
+  <meta name="theme-color" content="#0B3B5B">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500;600&family=Instrument+Sans:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="index.html" aria-label="PHONE 229, accueil"><span>PHONE</span><span class="logo-tag">229</span></a>
+      <button class="menu-bouton" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span></button>
+      <nav class="site-nav" id="nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-wa header-wa" href="contact.html" data-wa="">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-tete">
+      <div class="wrap">
+        <p class="eyebrow">Contact</p>
+        <h1 class="page-titre">Passez en boutique ou écrivez-nous</h1>
+        <p class="page-intro">Venez tester les téléphones sur place, ou posez vos questions sur WhatsApp : nous répondons pendant les heures d'ouverture.</p>
+      </div>
+    </section>
+
+    <div class="wrap contact-grille">
+      <div class="contact-blocs">
+        <div class="bloc bloc-wa">
+          <h2>Le plus rapide : WhatsApp</h2>
+          <p>Disponibilité d'un modèle, prix, livraison : envoyez-nous un message.</p>
+          <a class="btn btn-large" href="#" data-wa="Bonjour PHONE 229, j'ai une question.">Écrire sur WhatsApp</a>
+        </div>
+
+        <div class="bloc">
+          <h2>Coordonnées</h2>
+          <dl class="coordonnees">
+            <div><dt>Adresse</dt><dd><span data-info="adresse"></span>, <span data-info="ville"></span></dd></div>
+            <div><dt>Téléphone</dt><dd><a data-lien="tel" href="#" data-info="telephone"></a></dd></div>
+            <div><dt>E-mail</dt><dd><a data-lien="mail" href="#" data-info="email"></a></dd></div>
+          </dl>
+        </div>
+
+        <div class="bloc">
+          <h2>Horaires d'ouverture</h2>
+          <ul class="horaires" data-horaires></ul>
+        </div>
+
+        <div class="bloc">
+          <h2>Réseaux sociaux</h2>
+          <ul class="reseaux" data-reseaux></ul>
+        </div>
+      </div>
+
+      <div class="carte-plan">
+        <iframe id="carte" title="Plan d'accès à la boutique PHONE 229" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grille">
+        <div class="footer-marque">
+          <a class="logo" href="index.html"><span>PHONE</span><span class="logo-tag">229</span></a>
+          <p class="footer-slogan" data-info="slogan"></p>
+        </div>
+        <div>
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Boutique</h2>
+          <ul>
+            <li data-info="adresse"></li>
+            <li data-info="ville"></li>
+            <li><a data-lien="tel" href="#" data-info="telephone"></a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Suivez-nous</h2>
+          <ul data-reseaux></ul>
+        </div>
+      </div>
+      <div class="footer-bas">
+        <span>© <span data-annee></span> PHONE 229. Tous droits réservés.</span>
+        <span>Prix en FCFA, valables dans la limite des stocks.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/boutique.js"></script>
+  <script src="js/produits.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
